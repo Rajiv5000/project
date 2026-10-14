@@ -9,6 +9,7 @@ public class Calculator
     void input()
     {
         Scanner ak=new Scanner(System.in);
+        System.out.println("(Use Trigonometry, Logarithm, Factorial, Addition, Subtraction, Multiplication, Division, Root, Cube-root, exponential, )");
         System.out.println("Enter the Equation");
         s="("+tri(ak.next())+")"+"=";
     }
@@ -66,7 +67,6 @@ public class Calculator
             count=countSign(p,4,"root");
             for(c=0;c<count;c++)
             p=sqrt(p+"=");
-            
             if(check(p)==false)
             end("Invalid or Unknown Equation ");
             put(p+"=");
@@ -103,8 +103,8 @@ public class Calculator
         {
             char h=x.charAt(i);
             if(!(h=='1'||h=='2'||h=='3'||h=='4'||h=='5'||h=='6'||h=='7'||h=='8'||h=='9'||h=='0'||h=='^'||h=='.'||h=='/'||h=='*'||h=='+'||h=='-'||h=='='||h=='E'))
-           { ch=false; System.out.println(h);
-           }
+            ch=false; 
+           
         }
         return ch;
     }
